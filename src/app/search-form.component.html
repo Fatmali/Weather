@@ -1,0 +1,19 @@
+<div class="col-sm-6 col-md-4 navbar-right">
+        <form class="navbar-form" role="search" [formGroup]="searchForm">
+        <div class="input-group">
+            <input type="text" class="form-control" formControlName="searchField" placeholder="Search Weather by city" name="city">
+            
+        </div>
+
+        <div class="city-list" *ngIf="suggestionsReady&&!suggestionsEmpty&&listVisible" >
+          <div *ngFor="let suggestion of suggestions" class="city">
+            <a  [routerLink]="['/places', suggestion.name+','+suggestion.countryCode]" (click)="stopShowingList()">   
+          {{suggestion.name}}, {{suggestion.countryCode}}
+            </a>
+        </div>
+        </div>
+        
+
+        </form>
+          
+    </div>

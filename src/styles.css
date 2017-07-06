@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@media (min-width: 1200px) {
+    .containr{
+        max-width: 930px;
+        margin-top:20px;
+        -moz-box-shadow: 0 0 30px 5px #999;
+        -webkit-box-shadow: 0 0 30px 5px #999;
+        border-radius: 5px;
+        height: 620px;
+        
+    }
+
+    
+}

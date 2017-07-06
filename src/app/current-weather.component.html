@@ -1,0 +1,29 @@
+<div *ngIf="dataReady" class="app-body text-center">
+  <div class="date">
+{{date | date: 'mediumDate'}}
+{{town}},{{country}}<br/>
+{{date | date: 'shortTime'}}
+
+</div>
+      <img src={{imageLink}} height="150px" width="150px" class="img-responsive" style="margin:auto;"/>
+      <h3>{{currentWeather}}</h3>
+      <h4>{{currentWeatherDescription}}</h4>
+      <div class="conditions">
+      <img src="../assets/temperature-icon.png" width="45px" height="45px"><h4>{{temp}}C</h4>
+      </div>
+      <div class="conditions">
+      <img src="../assets/humidity.png" width="45px" height="45px"><h4>{{humidity}}%</h4>
+      </div>
+      <div class="conditions">
+      <img src="../assets/wind.png" width="45px" height="45px"><h4>{{wind}}km/h</h4>
+      </div>
+
+      <br/>
+      <br/>
+
+      <div class="text-center">
+<button class="btn btn-primary" (click)="share('fatmali.github.io')"><span><i class="fa fa-facebook" aria-hidden="true"></i></span> Share On Facebook</button>
+</div>
+</div>
+
+

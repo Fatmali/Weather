@@ -1,0 +1,15 @@
+.condition-type{
+    margin: 0px 10px 0px 10px;
+}
+
+*{
+    font-family: 'Zilla Slab',serif;
+}
+
+.day{
+    border-right: 1px solid lightgray;
+}
+.noBorder{
+    border-right: 0px solid white;
+}
+

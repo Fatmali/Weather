@@ -1,0 +1,67 @@
+.app-body{
+    font-family: 'Zilla Slab', serif;
+}
+
+.date{
+    font-family: 'Open Sans', serif;
+}
+
+.btn-forecast{
+    border-color : #f5d300;
+    font-family: 'Zilla Slab', serif;
+}
+
+.btn-forecast:hover{
+    color: #f5d300;
+    background-color: #f5d300;
+    
+}
+
+.btn-default:hover{
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+}
+img{
+    margin: 0px 5px 0px 5px;    
+}
+
+.conditions{
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+}
+
+#forecasts{
+    
+    margin: 5px 10px 10px 10px;
+    
+}
+
+#current{
+    border-right: 1px solid lightgray;
+}
+
+.conditionType{
+    display: inline-block;
+    margin: 5px 5px 10px 5px;
+}
+
+.conditions{
+    margin-top: 2px;
+    margin-right: 10px;
+    
+}
+
+.main-cond{
+    margin-left: 10px;
+}
+
+.day{
+    margin-bottom: 5px;
+    border-right: 1px solid lightgray;
+}
+
+.noBorder{
+    border-right: none;
+}

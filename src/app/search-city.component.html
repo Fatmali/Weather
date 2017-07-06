@@ -1,0 +1,56 @@
+<div *ngIf="dataReady" class="app-body text-center">
+ 
+  <div class="date">
+{{date | date: 'mediumDate'}}
+{{cityName}}<br/>
+{{date | date: 'shortTime'}}
+
+</div>
+      <img src={{imageLink}} height="80px" width="100px" class="img-responsive" style="margin:auto;"/>
+      <h3>{{currentWeather}}</h3>
+      <h4>{{currentWeatherDescription}}</h4>
+      <div class="conditions">
+      <img src="../assets/temperature-icon.png" width="25px" height="25px">{{temp}}C
+      </div>
+      <div class="conditions">
+      <img src="../assets/humidity.png" width="25px" height="25px">{{humidity}}%
+      </div>
+      <div class="conditions">
+      <img src="../assets/wind.png" width="45px" height="25px">{{wind}}km/h
+      </div>
+      <hr>
+
+
+<div id="forecasts" class="container">
+
+    <div class="row" *ngIf="isForecastReady">
+    <div *ngFor="let day of forecast; let lastDay=last">
+    <div class="col-md-3 text-center day" [class.noBorder]="lastDay">
+      <div class="row">
+       <h4 class="text-center"><b> {{day.dt * 1000 | date }} </b></h4>
+        <div class="col-md-6 main-cond" >
+       
+        <img width=70px height=70px [src]='"http://openweathermap.org/img/w/"+day.weather[0].icon+".png"'>
+        <h3>{{day.weather[0].main}}</h3>
+        <h4>{{day.weather[0].description}} </h4>
+        </div>
+        <div class="conditions col-md-4">
+        <div  class="conditionType" >
+       <img src="../assets/temperature-icon.png" width="25px" height="25px">{{day.main.temp-273 | number: '2.0-1' }}C 
+       </div>
+       <div class="conditionType" >
+        <img src="../assets/humidity.png" width="25px" height="25px">{{day.main.humidity}}%
+        </div>
+        <div style="display:inline-block" class="conditionType">
+        <img src="../assets/wind.png" width="25px" height="25px">{{day.wind.speed}}km/h
+        </div>
+        </div>
+        </div>
+    </div>
+    </div>
+  </div>
+
+</div>
+
+  
+</div>

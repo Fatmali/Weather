@@ -1,0 +1,48 @@
+.btn-submit{
+    border-color : #f5d300;
+}
+
+.btn-submit:hover{
+    color: #f5d300;
+    background-color: #f5d300;
+    
+}
+
+.btn-default:hover{
+    color: white;
+}
+
+.city{
+    background-color : white;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    font-family: "Open Sans",serif;
+    padding: 5px 5px 5px 5px;
+
+
+}
+
+.city:hover {
+  color: black;
+  background-color: #f5d300;
+  cursor: pointer;
+  
+}
+
+.city-list{
+    
+    background-color: white;
+    width:195px;
+    height: 16px;
+    margin-right: 43px;
+    float: right;
+    
+}
+
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}

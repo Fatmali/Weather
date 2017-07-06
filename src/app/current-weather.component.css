@@ -1,0 +1,33 @@
+.app-body{
+    font-family: 'Zilla Slab', serif;
+}
+
+.date{
+    font-family: 'Open Sans', serif;
+}
+
+.btn-forecast{
+    border-color : #f5d300;
+    font-family: 'Zilla Slab', serif;
+}
+
+.btn-forecast:hover{
+    color: #f5d300;
+    background-color: #f5d300;
+    
+}
+
+.btn-default:hover{
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+}
+img{
+    margin: 0px 5px 0px 5px;    
+}
+
+.conditions{
+    display: inline-block;
+    margin: 15px 10px 0px 10px;
+}
